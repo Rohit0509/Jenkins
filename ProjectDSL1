@@ -1,0 +1,12 @@
+job("First Project Via DSL"){
+    description("This is first project from dsl ${new Date()}")
+    scm{
+        git("https://github.com/Rohit0509/Jenkins.git")
+    }
+    triggers{
+        scm('* * * * *')
+    }
+    steps{
+        echo "This is the first project via DSL file"
+    }
+}
