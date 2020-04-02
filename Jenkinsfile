@@ -1,14 +1,14 @@
-pipline:{
-    agent : any
-    stages : {
+pipline{
+    agent any
+    stages{
         stage("Init"){
-            steps:{
+            steps{
                 echo "This is the init"
                 echo "This is the init step2"
             }
         }
         stage("Build"){
-            steps:{
+            steps{
                 echo "This is the build step"
             }
         }
