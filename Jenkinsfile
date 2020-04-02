@@ -12,5 +12,10 @@
                             echo 'Building Sample Maven Project'
                       }
                 }
+                stage('Deploy') {
+                      steps {
+                            echo 'Building Sample Maven Project'
+                      }
+                }
           }
     }
